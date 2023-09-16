@@ -18,7 +18,7 @@ echo "Ejercicio 3: <br>";
 echo "Suma: " . ($numero1 + $numero2) . "<br>";
 echo "Resta: " . ($numero1 - $numero2) . "<br>";
 echo "Multiplicación: " . ($numero1 * $numero2) . "<br>";
-echo "División entera: " . (int)($numero1 / $numero2) . "<br>";
+echo "División: " . (int)($numero1 / $numero2) . "<br>";
 echo "Entero: " . ($numero1 % $numero2) . "<br>";
 
 echo "<br>";
@@ -35,17 +35,17 @@ $baserectangulo = 18;
 $alturarectangulo = 12;
 $perimetrorectangulo = 2 * ($baserectangulo + $alturarectangulo);
 $arearectangulo = $baserectangulo * $alturarectangulo;
-echo "Ejercicio 5 - Rectángulo:<br>";
-echo "Perímetro del rectángulo: $perimetrorectangulo cm<br>";
-echo "Área del rectángulo: $arearectangulo cm²<br>";
+echo "Ejercicio 5: Para el rectángulo:<br>";
+echo "   Perímetro: $perimetrorectangulo cm<br>";
+echo "   Área: $arearectangulo cm²<br>";
 
 echo "<br>";
 
-// Ejercicio 5 - círculo
-$radiocirculo = 30;
-$perimetrocirculo = 2 * M_PI * $radiocirculo;
-$areacirculo = M_PI * pow($radiocirculo, 2);
-echo "Círculo:<br>";
-echo "Perímetro del círculo: " . round($perimetrocirculo, 2) . " cm<br>";
-echo "Área del círculo: " . round($areacirculo, 2) . " cm²<br>";
+$radioCirculo = 30;
+$pi = 3.14159;
+$perimetroCirculo = 2 * $pi * $radioCirculo;
+$areaCirculo = $pi * ($radioCirculo ** 2);
+echo "   Para el círculo:<br>";
+echo "   Perímetro: $perimetroCirculo cm<br>";
+echo "   Área: $areaCirculo cm²<br>";
 ?>
