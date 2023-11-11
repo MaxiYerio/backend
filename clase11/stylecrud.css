@@ -31,7 +31,7 @@
     color: white;
 }
 
-.contenedoreliminar{
+.contenedoreliminar {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -81,6 +81,8 @@
     cursor: pointer;
 }
 
+
+
 .cuadroform {
     position: absolute;
     top: 50%;
@@ -99,6 +101,37 @@
     padding: 0;
     color: #fff;
     text-align: center;
+}
+
+.SubirArchivo {
+    position: relative;
+    display: inline-block;
+}
+
+.SubirArchivo::before {
+    background-color: #c4a40c;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    content: 'Subir';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.SubirArchivo input[type="file"] {
+    opacity: 0;
+    width: 1%;
+    height: 1%;
+    display: inline-block;
+}
+
+#src-file::before {
+    content: 'Subir Foto';
 }
 
 .cuadroform .usuario {
@@ -183,21 +216,21 @@
 }
 
 .main-button a {
-	background-color: #c4a40c;
-	border-radius: 5px;
-	padding: 10px 15px;
-	display: inline-block;
-	color: #fff;
-	font-size: 14px;
-	text-transform: uppercase;
-	font-weight: 300;
-	letter-spacing: 0.4px;
-	text-decoration: none;
-	transition: all 0.5s;
+    background-color: #c4a40c;
+    border-radius: 5px;
+    padding: 10px 15px;
+    display: inline-block;
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 0.4px;
+    text-decoration: none;
+    transition: all 0.5s;
 }
 
 .main-button a:hover {
-	opacity: 0.7;
+    opacity: 0.7;
 }
 
 a {
